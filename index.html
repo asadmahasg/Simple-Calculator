@@ -11,50 +11,51 @@
     <div class="container">
         <div class="contentInside">
             <div class="displayScreen">
-                <h1 class="text"></h1>
+                <h1 class="text" id="textDisplay"></h1>
+                <h1 class="result" id="result">0</h1>
             </div>
             <div class="bottomButtons">
                 <div class="insideButtons">
                     <div class="lineOne">
-                        <button class="firstLineBtn">+</button>
-                        <button class="firstLineBtn">-</button>
-                        <button class="firstLineBtn">*</button>
-                        <button class="firstLineBtn">/</button>
+                        <button class="firstLineBtn" id="plus" onclick="BtnClickedHandler('+')">+</button>
+                        <button class="firstLineBtn" id="minus" onclick="BtnClickedHandler('-')">-</button>
+                        <button class="firstLineBtn" id="multiply" onclick="BtnClickedHandler('*')">*</button>
+                        <button class="firstLineBtn" id="divide" onclick="BtnClickedHandler('/')">/</button>
                     </div>
                     <div class="secondPart">
                         <div class="left">
                             <div class="content">
                                 <div class="lineTwo">
-                                    <button class="leftBtns secondLineBtn">7</button>
-                                    <button class="leftBtns secondLineBtn">8</button>
-                                    <button class="leftBtns secondLineBtn">9</button>
+                                    <button class="leftBtns " id="seven" onclick="BtnClickedHandler('7')">7</button>
+                                    <button class="leftBtns middleBtn" id="eight" onclick="BtnClickedHandler('8')">8</button>
+                                    <button class="leftBtns " id="nine" onclick="BtnClickedHandler('9')">9</button>
                                 </div>
                                 <div class="lineThree">
-                                    <button class="leftBtns secondLineBtn">4</button>
-                                    <button class="leftBtns secondLineBtn">5</button>
-                                    <button class="leftBtns secondLineBtn">6</button>
+                                    <button class="leftBtns " id="four" onclick="BtnClickedHandler('4')">4</button>
+                                    <button class="leftBtns middleBtn" id="five" onclick="BtnClickedHandler('5')">5</button>
+                                    <button class="leftBtns " id="six" onclick="BtnClickedHandler('6')">6</button>
                                 </div>
                                 <div class="lineFour">
-                                    <button class="leftBtns secondLineBtn">1</button>
-                                    <button class="leftBtns secondLineBtn">2</button>
-                                    <button class="leftBtns secondLineBtn">3</button>
+                                    <button class="leftBtns " id="one" onclick="BtnClickedHandler('1')">1</button>
+                                    <button class="leftBtns middleBtn" id="two" onclick="BtnClickedHandler('2')">2</button>
+                                    <button class="leftBtns " id="three" onclick="BtnClickedHandler('3')">3</button>
                                 </div>
                                 <div class="lineFive">
-                                    <button class="leftBtns secondLineBtn">0</button>
-                                    <button class="leftBtns secondLineBtn">.</button>
-                                    <button class="leftBtns secondLineBtn">C</button>
+                                    <button class="leftBtns " id="zero" onclick="BtnClickedHandler('0')">0</button>
+                                    <button class="leftBtns middleBtn" id="dot" onclick="BtnClickedHandler('.')">.</button>
+                                    <button class="leftBtns " id="clear" onclick="BtnClickedHandler('c')">C</button>
                                 </div>
                             </div>
                         </div>
                         <div class="right">
-                            <div class="content">
-                                <button class="equalBtn">=</button>
-                            </div>
+                                <button class="equalBtn" id="equal" onclick="BtnClickedHandler('=')">=</button> 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="JavaScript/script.js"></script>
+
 </body>
 </html>
