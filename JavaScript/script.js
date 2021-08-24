@@ -91,7 +91,7 @@ function BtnClickedHandler(x) {
             console.log("three");
             break;
         case '0':
-            mainContent+="7=0";
+            mainContent+="0";
             displayConent();
             console.log("zero");
             break;
@@ -114,6 +114,7 @@ function BtnClickedHandler(x) {
 }
 function operationCalled(operation){
     console.log("Operation Called: "+operation);
+
 }
 function displayConent(){
     text1.innerHTML = mainContent;
