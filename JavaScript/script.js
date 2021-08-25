@@ -1,23 +1,24 @@
-var text1 = document.getElementById("textDisplay");
-var text2 = document.getElementById("result");
-var plus = document.getElementById("plus");
-var multiply = document.getElementById("multiply");
-var divide = document.getElementById("divide");
-var seven = document.getElementById("seven");
-var eight = document.getElementById("eight");
-var nine = document.getElementById("nine");
-var four = document.getElementById("four");
-var five = document.getElementById("five");
-var six = document.getElementById("six");
-var one = document.getElementById("one");
-var two = document.getElementById("two");
-var three = document.getElementById("three");
-var zero = document.getElementById("zero");
-var dot = document.getElementById("dot");
-var clear = document.getElementById("clear");
-var equal = document.getElementById("equal");
-var mainContent = "";
-var subContent = "";
+let text2 = document.getElementById("result");
+let text1 = document.getElementById("textDisplay");
+let plus = document.getElementById("plus");
+let multiply = document.getElementById("multiply");
+let divide = document.getElementById("divide");
+let seven = document.getElementById("seven");
+let eight = document.getElementById("eight");
+let nine = document.getElementById("nine");
+let four = document.getElementById("four");
+let five = document.getElementById("five");
+let six = document.getElementById("six");
+let one = document.getElementById("one");
+let two = document.getElementById("two");
+let three = document.getElementById("three");
+let zero = document.getElementById("zero");
+let dot = document.getElementById("dot");
+let clear = document.getElementById("clear");
+let equal = document.getElementById("equal");
+let mainContent = "";
+let subContent = "";
+let firstOperation = null;
 
 function BtnClickedHandler(x) {
     switch (x) {
@@ -114,8 +115,13 @@ function BtnClickedHandler(x) {
 }
 function operationCalled(operation){
     console.log("Operation Called: "+operation);
+    switch(operation){
+        case "=":
+            break;
+    }
 
 }
+
 function displayConent(){
     text1.innerHTML = mainContent;
 }
